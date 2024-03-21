@@ -10,7 +10,11 @@ const Navbar = () => {
     return (
         <nav className="bg-[#7d3c1356] p-4">
             <div className="max-w-7xl mx-auto flex  lg:justify-between items-center">
-                <div className={`text-[#000000] ml-[21px] lg:ml-[64px] text-[15px] lg:text-[32px]   font-bold ${isOpen ? "hidden" : "block"}`}>FRED</div>
+                <div className={`text-[#000000] ml-[21px] lg:ml-[64px] text-[15px] lg:text-[32px]   font-bold ${isOpen ? "hidden" : "block"}`}>
+                    <a href="https://adsp-temp1-pro.vercel.app/">
+                    FRED
+                    </a>
+                    </div>
                 <div className=" lg:hidden">
                     <button
                         className="text-white focus:outline-none absolute right-2 top-2"
