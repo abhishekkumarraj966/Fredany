@@ -11,7 +11,7 @@ const Blogs = () => {
                 <p className='font-bold text-center text-[7px] lg:text-[20px] text-white mt-[10px] lg:mt-[20px]'>HandMade Decor</p>
             </div>
             <div>
-                <img src='/assets/unsplash_j_14082_3G0.svg' className='w-[111px] h-[117px] rounded-[20px] lg:w-[325px] lg:h-[342px]'/>
+                <img src='https://s3-alpha-sig.figma.com/img/9e8d/873a/67f3faf4b25d6f43c325d254926f4881?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=q4ZI9wg0daIvEgrwQwSUh1HuYevXEW~kFqZBbLe2zsO299fstfcHpekqgn~UHV9i-vRb1yllZmYU-T5uQ8b59I2bBP75RRNUDkI1-akJegTP2SFi1N9GD91uE8hmpsvUYLRfW3nmaP~JOkVUN7VfMcpvXuGcy16THrbs3K3TW9R5Ypf27inEscoWyxPQLoaGmxdCWsxlJ-Y3Klwr-9zgHhW7ff0QCegKv3UNdUck~-yliXybZvxLS8~SljTGqUaG1aAxuH1UCLMHrC3u6cgMaWpARqZiDkgy3DjduuTCaASk0yYCUQ5sbiNQ9Uod1EDBsTZueMU1DXr3qpw8C5IM9Q__' className='w-[111px] h-[117px] rounded-[20px] lg:w-[325px] lg:h-[342px]'/>
                 <p className='font-bold text-center text-[7px] lg:text-[20px] text-white mt-[10px] lg:mt-[20px]'>Crafted Things</p>
             </div>
             <div>
