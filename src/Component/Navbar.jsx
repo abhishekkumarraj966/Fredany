@@ -34,24 +34,24 @@ const Navbar = () => {
                 </div>
                 <ul className={`lg:flex  space-x-[50px] ${isOpen ? 'block' : 'hidden'}`}>
                     <li className='flex gap-2 items-baseline ml-[50px] justify-center'>
-                        <a href="#" className="text-white lg:text-[24px] font-normal hover:text-gray-300">
+                        <a href="#" className="text-white lg:text-[24px] font-normal hover:text-gray-300 hover:underline">
                             Home
                         </a>
-                        <img src='/assets/Vector 21.png' className='w-[10px] h-[10px] ml-1' />
+                        {/* <img src='/assets/Vector 21.png' className='w-[10px] h-[10px] ml-1' /> */}
                     </li>
                     <li className='flex gap-2 items-baseline'>
-                        <a href="#" className="text-white lg:text-[24px] font-normal hover:text-gray-300">
+                        <a href="#" className="text-white lg:text-[24px] font-normal hover:text-gray-300 hover:underline">
                             Shop            </a>
-                        <img src='/assets/Vector 21.png' className='w-[10px] h-[10px] ml-1' />
+                        {/* <img src='/assets/Vector 21.png' className='w-[10px] h-[10px] ml-1' /> */}
                     </li>
                     <li className='flex gap-2 items-baseline'>
-                        <a href="#" className="text-white lg:text-[24px] font-normal hover:text-gray-300">
+                        <a href="#" className="text-white lg:text-[24px] font-normal hover:text-gray-300 hover:underline">
                             Blog            </a>
-                        <img src='/assets/Vector 21.png' className='w-[10px] h-[10px] ml-1' />
+                        {/* <img src='/assets/Vector 21.png' className='w-[10px] h-[10px] ml-1' /> */}
                     </li>
 
                     <li>
-                        <a href="#" className="text-white hover:text-gray-300 lg:text-[24px] font-normal">
+                        <a href="#" className="text-white hover:text-gray-300 lg:text-[24px] font-normal hover:underline">
                             About Us
                         </a>
                     </li>
