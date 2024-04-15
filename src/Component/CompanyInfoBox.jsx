@@ -2,7 +2,7 @@ import React from 'react'
 
 const CompanyInfoBox = () => {
     return (
-        <div className='bg-[#7D3C13] '>
+        <div className='bg-[#7D3C13] ' id='about'>
             <div className='w-[90vw] pt-[12px] sm:pt-[25px] lg:pt-[43px] mx-auto h-[192px] sm:h-[300px] lg:h-[520px] flex flex-col  items-center ' >
                 <img src='/assets/unsplash_uoZGGnbBqmE.svg' className='w-[74p] h-[41px] rounded-[50%] sm:w-[120px] sm:h-[65px] lg:w-[184px]  lg:h-[102px] bg-[#00000046]' />
                 <h2 className='font-bold text-[14px] sm:text-[25px] text-white lg:text-[40px] mt-[7px] sm:mt-[20px] lg:mt-[30px]'>Vishant Thakur</h2>

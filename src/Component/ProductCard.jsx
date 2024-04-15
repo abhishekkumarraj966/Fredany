@@ -24,7 +24,7 @@ const sofasData = [
 
 const ProductCard = () => {
   return (
-    <div className="h-[250px] sm:h-[600px] lg:h-[850px] w-full bg-[#7D3C13]">
+    <div className="h-[250px] sm:h-[600px] lg:h-[850px] w-full bg-[#7D3C13]" id="shop">
       <h2 className="font-bold text-[15px] text-center sm:text-[28px] lg:text-[32px] sm:pt-[40px] pt-[15px] lg:pt-[50px] text-white ">
         Products
       </h2>
