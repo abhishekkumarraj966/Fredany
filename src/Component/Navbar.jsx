@@ -1,81 +1,83 @@
 import React, { useState } from "react";
+import { FaTimes } from "react-icons/fa";
+import { CiMenuBurger } from "react-icons/ci";
+import AppLayout from "./AppLayout";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [click, setClick] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+  const handleClick = () => {
+    setClick(!click);
   };
 
-  return (
-    <nav className="bg-[#7d3c1356] p-4">
-      <div className="max-w-7xl mx-auto flex  lg:justify-between items-center">
-        <div
-          className={`text-[#000000] ml-[21px] lg:ml-[64px] text-[15px] lg:text-[32px]   font-bold ${
-            isOpen ? "hidden" : "block"
-          }`}
-        >
-          <a href="https://adsp-temp1-pro.vercel.app/">FRED</a>
-        </div>
-        <div className=" lg:hidden">
-          <button
-            className="text-white focus:outline-none absolute right-2 top-2"
-            onClick={toggleMenu}
-          >
-            <svg
-              className="w-6 h-6 fill-current"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M4 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 5h16a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm0 5h16a1 1 0 1 1 0 2H4a1 1 0 0 1 0-2z"
-              />
-            </svg>
-          </button>
-        </div>
-        <ul
-          className={`lg:flex  space-x-[50px] ${isOpen ? "block" : "hidden"}`}
-        >
-          <li className="flex gap-2 items-baseline ml-[30px] justify-center">
-            <a
-              href="#home"
-              className="text-white lg:text-[24px] font-normal hover:text-gray-300 hover:underline"
-            >
-              Home
-            </a>
-            {/* <img src='/assets/Vector 21.png' className='w-[10px] h-[10px] ml-1' /> */}
+  const content = (
+    <div className="sm:hidden block absolute top-16 w-full left-0 right-0 bg-[#7D3C13]  transition-transform duration-200 transform ">
+      <AppLayout>
+        <ul className="text-center text-xl px-[20px] shadow-2xl  transition-transform duration-200 transform ">
+          <li className="my-4 py-4 border-black ">
+            <a href="#home">Home</a>
           </li>
-          <li className="flex gap-2 items-baseline">
-            <a
-              href="#shop"
-              className="text-white lg:text-[24px] font-normal hover:text-gray-300 hover:underline"
-            >
-              Shop
-            </a>
-            {/* <img src='/assets/Vector 21.png' className='w-[10px] h-[10px] ml-1' /> */}
+          <li className="my-4 py-4 border-black">
+            <Link to="/about">About Us</Link>
           </li>
-          <li className="flex gap-2 items-baseline">
-            <a
-              href="#blogs"
-              className="text-white lg:text-[24px] font-normal hover:text-gray-300 hover:underline"
-            >
-              Blog{" "}
-            </a>
-            {/* <img src='/assets/Vector 21.png' className='w-[10px] h-[10px] ml-1' /> */}
+          <li className="my-4 py-4 border-black">
+            <a href="#services">Services</a>
           </li>
-
-          <li>
-            <a
-              href="#about"
-              className="text-white hover:text-gray-300 lg:text-[24px] font-normal hover:underline"
-            >
-              About Us
-            </a>
+          <li className="my-4 py-4 border-black">
+            <a href="#Contact">Contct Us</a>
+          </li>
+          <li className="my-4 py-4 border-black">
+            <a href="#gallery">Gallery</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </AppLayout>
+    </div>
+  );
+
+  return (
+    <div className="bg-[#7D3C13]  text-white">
+      <AppLayout>
+        <nav>
+          <div className="h-16 flex justify-between z-20 text-white lg:py-5 px-[20px] py-4 ">
+            <div className="flex items-center flex-1">
+              <a href="https://adsp-temp1-pro.vercel.app/">
+                <span className="text-3xl font-bold">Fashionista</span>
+                {/* <img src="/" alt="comLogo" /> */}
+              </a>
+            </div>
+            <div className="lg:flex lg:flex-1 items-center justify-end font-normal hidden">
+              <div className="flex-10">
+                <ul className="flex gap-8 mr-16 text-[18px] ">
+                  <li className="hover:text-black transition  hover:underline  cursor-pointer">
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li className="hover:text-black transition  hover:underline  cursor-pointer">
+                    <Link to="/about">About Us</Link>
+                  </li>
+                  <li className="hover:text-black transition  hover:underline  cursor-pointer">
+                    <a href="#services">Services</a>
+                  </li>
+                  <li className="hover:text-black transition  hover:underline  cursor-pointer">
+                    <a href="#inquryform">Contct Us</a>
+                  </li>
+                  <li className="hover:text-black transition  hover:underline  cursor-pointer">
+                    <a href="#gallery">Gallery</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>{click && content}</div>
+            <button
+              className="block md:hidden translate text-white"
+              onClick={handleClick}
+            >
+              {click ? <FaTimes/> : <CiMenuBurger/>}
+            </button>
+          </div>
+        </nav>
+      </AppLayout>
+    </div>
   );
 };
 

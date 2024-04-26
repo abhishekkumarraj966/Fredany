@@ -1,45 +1,38 @@
 import React from "react";
-import  img1 from "./assites/img1.png"
-import  img2 from "./assites/img2.png"
-import  img3 from "./assites/img3.png"
+import img1 from "./assites/img1.png";
+import img2 from "./assites/img2.png";
+import img3 from "./assites/img3.png";
+import AppLayout from "./AppLayout";
 const Blogs = () => {
   return (
-    <div className="bg-[#d6763b] p-[37px] lg:p-[100px] mx-auto" id="blogs">
-      <div className=" h-[190px] sm:h-[400px] lg:h-[503px]">
-        <p className="font-bold text-[15px] text-center sm:text-[28px] lg:text-[32px] pt-[15px]  text-white ">
+    <div className="bg-[#d6763b] p-[37px]  mx-auto" id="blogs">
+     <AppLayout>
+      <div className="mx-auto">
+        <p className="font-bold text-[25px] text-center sm:text-[28px] lg:text-[32px] pt-[15px]  text-white ">
           Blogs
         </p>
-        <div className="flex justify-between mt-[25px] sm:mt-[35px] lg:mt-[50px] ">
-          <div>
-            <img
-              src={img1}
-              className="w-[111px] h-[117px] rounded-[20px] lg:w-[325px] sm:w-[200px] sm:h-[250px] lg:h-[342px] "
-            />
-            <p className="font-bold text-center text-[7px] sm:text-[16px] lg:text-[20px] text-white mt-[10px] sm:mt-[14px] lg:mt-[20px]">
+        <div className="grid sm:grid-cols-3 gap-1 mx-auto">
+          <div className=" mt-4 sm:mt-1">
+            <img src={img1} className="w-[350px] h-[400px] sm:h-[300px] sm:w-[250px] lg:w-[400px] lg:h-[450px] rounded-[20px] mx-auto " />
+            <p className="font-bold text-center text-[18px] sm:text-[16px] lg:text-[20px] text-white mt-[5px] sm:mt-[14px] lg:mt-[20px]">
               HandMade Decor
             </p>
           </div>
-          <div>
-            <img
-              src={img2}
-             
-              className="w-[111px] h-[117px] rounded-[20px] lg:w-[325px] sm:w-[200px] sm:h-[250px] lg:h-[342px] "
-            />
-            <p className="font-bold text-center text-[7px] sm:text-[16px] lg:text-[20px] text-white mt-[10px] sm:mt-[14px] lg:mt-[20px]">
+          <div className=" mt-4 sm:mt-1">
+            <img src={img2} className="w-[350px] h-[400px] sm:h-[300px] sm:w-[250px] lg:w-[400px] lg:h-[450px] rounded-[20px] mx-auto" />
+            <p className="font-bold text-center text-[18px] sm:text-[16px] lg:text-[20px] text-white mt-[5px] sm:mt-[14px] lg:mt-[20px]">
               Crafted Things
             </p>
           </div>
-          <div>
-            <img
-            src={img3}
-              className="w-[111px] h-[117px] rounded-[20px] lg:w-[325px] sm:w-[200px] sm:h-[250px] lg:h-[342px] "
-            />
-            <p className="font-bold text-center text-[7px] sm:text-[16px] lg:text-[20px] text-white mt-[10px] sm:mt-[14px] lg:mt-[20px]">
+          <div className=" mt-4 sm:mt-1">
+            <img src={img3} className="w-[350px] h-[400px] sm:h-[300px] sm:w-[250px] lg:w-[400px] lg:h-[450px] rounded-[20px] mx-auto " />
+            <p className="font-bold text-center text-[18px] sm:text-[16px] lg:text-[20px] text-white mt-[5px] sm:mt-[14px] lg:mt-[20px]">
               Rope Crafted Decor
             </p>
           </div>
         </div>
       </div>
+      </AppLayout>
     </div>
   );
 };

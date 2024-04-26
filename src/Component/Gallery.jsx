@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PopupAlbum from "./PopupAlbum";
 import Slider from "react-slick";
-
+import AppLayout from "./AppLayout" 
 const Gallery = () => {
   let [isPopOpen, setIsPopupOpen] = useState(false);
   let [imsg, setImage] = useState(0);
@@ -12,6 +12,7 @@ const Gallery = () => {
   };
   return (
     <div className="p-[50px] lg:p-[120px] bg-[#7D3C13]">
+      <AppLayout>
       <p className="font-bold text-[15px] text-center sm:text-[28px] lg:text-[32px]   text-white ">
         Gallery
       </p>
@@ -95,6 +96,7 @@ const Gallery = () => {
           setImage={setImage}
         />
       )}
+      </AppLayout>
     </div>
   );
 };
