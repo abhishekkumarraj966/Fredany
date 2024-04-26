@@ -2,7 +2,7 @@ import React from "react";
 
 const ServiceBox = () => {
   return (
-    <div className="w-auto min-h-[368px] sm:min-h-[500px] lg:min-h-[500px] bg-[#d6763b]">
+    <div className="w-auto min-h-[368px] sm:min-h-[500px] lg:min-h-[500px] bg-[#d6763b]" id="contact">
       <div className="font-[700] text-[20px] sm:text-[28px] lg:text-[48px] text-center text-white   pt-[20px] sm:pt-[30px] lg:pt-[50px]">
         Contact <span className="font-[900]">Us</span>
       </div>

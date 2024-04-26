@@ -12,23 +12,23 @@ const Navbar = () => {
   };
 
   const content = (
-    <div className="sm:hidden block absolute top-16 w-full left-0 right-0 bg-[#7D3C13]  transition-transform duration-200 transform ">
+    <div className="md:hidden block absolute top-16 w-full left-0 right-0 bg-[#7D3C13]  transition-transform duration-200 transform ">
       <AppLayout>
         <ul className="text-center text-xl px-[20px] shadow-2xl  transition-transform duration-200 transform ">
           <li className="my-4 py-4 border-black ">
             <a href="#home">Home</a>
           </li>
           <li className="my-4 py-4 border-black">
-            <Link to="/about">About Us</Link>
+            <a href="#about">About Us</a>
           </li>
           <li className="my-4 py-4 border-black">
-            <a href="#services">Services</a>
+            <a href="#shop">Product</a>
           </li>
           <li className="my-4 py-4 border-black">
-            <a href="#Contact">Contct Us</a>
+            <a href="#contact">Contct Us</a>
           </li>
           <li className="my-4 py-4 border-black">
-            <a href="#gallery">Gallery</a>
+            <a href="#gal">Gallery</a>
           </li>
         </ul>
       </AppLayout>
@@ -50,19 +50,20 @@ const Navbar = () => {
               <div className="flex-10">
                 <ul className="flex gap-8 mr-16 text-[18px] ">
                   <li className="hover:text-black transition  hover:underline  cursor-pointer">
-                    <Link to="/">Home</Link>
+                   
+                      <a href="#home"> Home</a>
                   </li>
                   <li className="hover:text-black transition  hover:underline  cursor-pointer">
-                    <Link to="/about">About Us</Link>
+                    <a href="#about">About Us</a>
                   </li>
                   <li className="hover:text-black transition  hover:underline  cursor-pointer">
-                    <a href="#services">Services</a>
+                    <a href="#shop">Product</a>
                   </li>
                   <li className="hover:text-black transition  hover:underline  cursor-pointer">
-                    <a href="#inquryform">Contct Us</a>
+                    <a href="#contact">Contct Us</a>
                   </li>
                   <li className="hover:text-black transition  hover:underline  cursor-pointer">
-                    <a href="#gallery">Gallery</a>
+                    <a href="#gal">Gallery</a>
                   </li>
                 </ul>
               </div>
@@ -72,7 +73,7 @@ const Navbar = () => {
               className="block md:hidden translate text-white"
               onClick={handleClick}
             >
-              {click ? <FaTimes/> : <CiMenuBurger/>}
+              {click ? <FaTimes /> : <CiMenuBurger />}
             </button>
           </div>
         </nav>
