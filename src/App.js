@@ -1,29 +1,23 @@
-import './App.css';
-import Appoinment from './Component/Appoinment';
-import Blogs from './Component/Blogs';
-import BussinessHours from './Component/BussinessHours';
-import CompanyInfoBox from './Component/CompanyInfoBox';
-import EnquiryForm from './Component/EnquiryForm';
-import Footer from './Component/Footer';
-import Gallery from './Component/Gallery';
-import Home from './Component/Home';
-import ProductCard from './Component/ProductCard';
-import ServiceBox from './Component/ServiceBox';
-
+import Footer  from "./Component/Footer"
+import "./App.css";
+import Layout from "./Component/Layout";
+import Navbar from "./Component/Navbar";
+import Probuctpage from "./Component/Probuctpage"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Blogespag from "./Component/Blogespag";
 function App() {
   return (
-  <>
-  <Home/>
-  <CompanyInfoBox/>
-  <ServiceBox/>
-  <ProductCard/>
-  <Blogs/>
-  <Gallery/>
-  <BussinessHours/>
-  <EnquiryForm/>
-  <Appoinment/>
- <Footer/>
-  </>
+    <div className="bg-[#ECECEC]">
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" exact element={<Layout />} />
+          <Route path="/blogespag" element={<Blogespag />} />
+        <Route path="/productpage" element={<Probuctpage/>} />
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+    </div>
   );
 }
 

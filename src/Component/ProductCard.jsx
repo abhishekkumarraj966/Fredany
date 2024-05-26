@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
 import AppLayout from "./AppLayout";
+import { Link } from "react-router-dom";
 const sofasData = [
   {
     imageUrl: "/assets/unsplash_vE7JbyPGxfA.jpg",
@@ -84,14 +85,18 @@ const ProductCard = () => {
             {sofasData.map((sofa, index) => (
               <SwiperSlide key={index}>
                  <div className="w-[320px] bg-[#D4B294]  lg:w-[280px] rounded-md border shadow-xl gap-2  mx-auto">
+               <Link to="/productpage">
                 <img
                   src={sofa.imageUrl}
                   alt="Laptop"
                   className="h-48 w-full sm:w-[100%] lg:w-[100%] p-[5px] rounded-xl object-cover"
                 />
+                </Link>
                 <div className="py-4 pb-10 px-2">
                   <h1 className="text-lg font-bold tracking-0.5 cursor-pointer   text-[20px] text-black self-start  mx-auto">
+                   <Link to="/productpage">
                     {sofa.title}
+                    </Link>
                   </h1>
                   <p className="mt-3 text-sm text-[#7D3C13] text-[5px] sm:text-[14px] lg:text-[20px] font-light   mx-auto tracking-0.5 leading-6">
                     {sofa.description}
@@ -109,21 +114,3 @@ const ProductCard = () => {
 };
 
 export default ProductCard;
-
-// <Card imgUrl={"unsplash_vE7JbyPGxfA.jpg"} />
-// <Card imgUrl={"ptest.jpg"} />
-// <Card imgUrl={"unsplash_lhO9WgObmNY.svg"} />
-
-{/* <div className="bg-[#D4B294]  h-[155px] sm:h-[400px] p-[15px]  pt-[25px] sm:pt-[10px]  flex flex-col  lg:gap-3 items-center justify-center  rounded-[12px] lg:w-[427px] lg:h-[570px] mt-[40px] sm:mt-[20px] lg:mt-[80px]">
-                  <img
-                    src={sofa.imageUrl}
-                    alt={sofa.title}
-                    className="mx-auto h-[78px] sm:h-[160px]  lg:h-[287px] mb-2"
-                  />
-                  <p className="font-normal text-[5px] lg:text-[24px] sm:text-[18px] text-black self-start  mx-auto">
-                    {sofa.title}
-                  </p>
-                  <p className="text-[#7D3C13] text-[5px] sm:text-[14px] lg:text-[20px] font-light   mx-auto">
-                    {sofa.description}
-                  </p>
-                </div> */}

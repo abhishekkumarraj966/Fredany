@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   const content = (
-    <div className="md:hidden block absolute top-16 w-full left-0 right-0 bg-[#7D3C13]  transition-transform duration-200 transform ">
+    <div className="lg::hidden block absolute top-16 w-full left-0 right-0 bg-[#7D3C13]  transition-transform duration-200 transform ">
       <AppLayout>
         <ul className="text-center text-xl px-[20px] shadow-2xl  transition-transform duration-200 transform ">
           <li className="my-4 py-4 border-black ">
@@ -70,7 +70,7 @@ const Navbar = () => {
             </div>
             <div>{click && content}</div>
             <button
-              className="block md:hidden translate text-white"
+              className="block lg:hidden translate text-white"
               onClick={handleClick}
             >
               {click ? <FaTimes /> : <CiMenuBurger />}
