@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import PopupAlbum from "./PopupAlbum";
+import CertificatesAlbum from "./CertificatesAlbum";
 import Slider from "react-slick";
 import AppLayout from "./AppLayout" 
-const Gallery = () => {
+const Certificates = () => {
   let [isPopOpen, setIsPopupOpen] = useState(false);
   let [imsg, setImage] = useState(0);
 
@@ -14,7 +14,7 @@ const Gallery = () => {
     <div className="p-[50px] lg:p-[120px] bg-[#7D3C13]" id="gal">
       <AppLayout>
       <p className="font-bold text-[15px] text-center sm:text-[28px] lg:text-[32px]   text-white ">
-        Gallery
+      Certificates
       </p>
 
       <div className="mt-[30px] sm:mt-[50px] lg:mt-[100px]">
@@ -61,7 +61,7 @@ const Gallery = () => {
         </div>
       </div>
       {isPopOpen && (
-        <PopupAlbum
+        <CertificatesAlbum
           setIsPopupOpen={setIsPopupOpen}
           imsg={imsg}
           setImage={setImage}
@@ -72,4 +72,6 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+
+
+export default Certificates

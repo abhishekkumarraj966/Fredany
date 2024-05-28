@@ -8,6 +8,10 @@ import Gallery from"./Gallery"
 import BussinessHours from"./BussinessHours"
 import EnquiryForm from "./EnquiryForm"
 import Appoinment from "./Appoinment"
+import Service from "./Service";
+import Feedbackform from "./Feedbackform";
+import Review from "./Review";
+import Certificates from "./Certificates";
 const Layout = () => {
   return (
     <div className="">
@@ -16,9 +20,13 @@ const Layout = () => {
       <ServiceBox />
       <ProductCard />
       <Blogs />
+      <Service/>
       <Gallery />
       <BussinessHours />
+      <Certificates/>
       <EnquiryForm />
+      <Feedbackform/>
+      <Review/>
       <Appoinment />
     </div>
   );
