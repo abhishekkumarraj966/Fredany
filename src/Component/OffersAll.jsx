@@ -10,7 +10,7 @@ let imagarr = [
   "/assets/unsplash_W5dsm9n6e3g.jpg",
 ]; // if you want to add some image then , gice url in this array
 
-const CertificatesAlbum = ({ setIsPopupOpen, imsg, setImage }) => {
+const OffersAll= ({ setIsPopupOpen, imsg, setImage }) => {
   let handleNextImage = () => {
     if (imsg === imagarr.length - 1) {
       setImage(0);
@@ -60,4 +60,5 @@ const CertificatesAlbum = ({ setIsPopupOpen, imsg, setImage }) => {
 
 
 
-export default CertificatesAlbum
+
+export default OffersAll

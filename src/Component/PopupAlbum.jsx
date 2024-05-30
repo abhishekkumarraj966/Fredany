@@ -27,7 +27,7 @@ const PopupAlbum = ({ setIsPopupOpen, imsg, setImage }) => {
     }
   };
   return (
-    <div className="h-screen w-[350px] lg:w-[900px] sm:w-[700px] bg-[#1f1c147c] fixed top-0 flex justify-center items-center ml-2 lg:mx-40 sm:mx-0">
+    <div className="h-screen w-[350px] lg:w-[900px] sm:w-[700px] bg-[#1f1c147c] fixed top-0 flex justify-center items-center z-10 ml-[-11%] lg:mx-40 sm:mx-0">
       <div
         className="text-right mt-2  text-white text-[31px] absolute right-5 top-3 cursor-pointer"
         onClick={() => setIsPopupOpen(false)}

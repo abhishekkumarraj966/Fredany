@@ -12,6 +12,7 @@ import Service from "./Service";
 import Feedbackform from "./Feedbackform";
 import Review from "./Review";
 import Certificates from "./Certificates";
+import Offer from "./Offer";
 const Layout = () => {
   return (
     <div className="">
@@ -19,11 +20,13 @@ const Layout = () => {
       <CompanyInfoBox />
       <ServiceBox />
       <ProductCard />
+      <Offer/>
       <Blogs />
       <Service/>
       <Gallery />
       <BussinessHours />
       <Certificates/>
+      
       <EnquiryForm />
       <Feedbackform/>
       <Review/>
