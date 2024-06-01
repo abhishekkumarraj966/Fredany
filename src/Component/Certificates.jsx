@@ -17,16 +17,17 @@ const Certificates = () => {
 
   return (
     <>
+    <div className="bg-[#7D3C13]">
       <div
         id="gallery"
-        className="w-[80%] mx-auto pb-10"
+        className="w-[80%] mx-auto pb-10 "
       >
        
-        <span className="text-center font-bold text-[35px] items-center mx-[23%] sm:mx-[38%] lg:mx-[46%]">
+        <span className="text-center font-bold text-[35px] items-center mx-[23%] pt-[10px] sm:mx-[38%] lg:mx-[46%] text-white">
           Certificates
           </span>
       
-        <div className=" mt-[20px]  lg:hidden ">
+        <div className=" pt-[15px]  md:hidden ">
           <Slider
             dots={true}
             infinite={true}
@@ -55,7 +56,7 @@ const Certificates = () => {
           </Slider>
         </div>
 
-        <div className=" flex-wrap justify-center mt-[60px] hidden px-[10px] gap-y-[12px] lg:flex">
+        <div className=" flex-wrap justify-center mt-[60px] hidden px-[10px] gap-y-[12px] md:flex">
           <img
             src={gl1}
             className="w-[281px] transition-transform transform duration-100 hover:scale-110 h-[168px] rounded-[12px] lg:h-[191px] lg:w-[318px] lg:rounded-[12px] mx-2"
@@ -103,6 +104,7 @@ const Certificates = () => {
           setImage={setImage}
         />
       )}
+      </div>
     </>
   );
 };

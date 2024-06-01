@@ -3,13 +3,13 @@ import AppLayout from "./AppLayout";
 
 const Appoinment = () => {
   return (
-    <div className="bg-[#D6763B]">
+    <div className="bg-[#D6763B] ">
       <AppLayout>
         <p className="text-center font-bold text-[35px] text-[#FFF] pt-2 pb-6">
           Appointment
         </p>
         <div className=" pb-10 rounded  bg-[#7D3C13] pt-6">
-          <div className="w-[90%] sm:w-[85%] lg:w-[80%]   sm:h-[100px]  items-center rounded-[10px]  lg:flex gap-2 justify-around mx-auto mt-[30px]  pb-20">
+          <div className="w-[90%] sm:w-[85%] lg:w-[80%]   sm:h-[100%]  items-center rounded-[10px]  lg:flex gap-2 justify-around mx-auto mt-[30px]  pb-20">
             <div className="">
               <p className="font-bold text-[10px]  sm:text-[20px]  text-[#fff] ">
                 Name

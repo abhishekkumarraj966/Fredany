@@ -73,6 +73,10 @@ const ProductCard = () => {
               spaceBetween: 15,
             },
             900: {
+              slidesPerView: 3,
+              spaceBetween: 5,
+            },
+            1000: {
               slidesPerView: 4,
               spaceBetween: 5,
             },
@@ -84,7 +88,7 @@ const ProductCard = () => {
           <div className="flex gap-2">
             {sofasData.map((sofa, index) => (
               <SwiperSlide key={index}>
-                 <div className="w-[320px] bg-[#D4B294]  lg:w-[280px] rounded-md border shadow-xl gap-2  mx-auto">
+                 <div className="w-[300px] bg-[#D4B294]  lg:w-[280px] rounded-md border shadow-xl gap-2  mx-auto">
                <Link to="/productpage">
                 <img
                   src={sofa.imageUrl}

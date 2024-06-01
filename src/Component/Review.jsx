@@ -30,7 +30,7 @@ const Review = () => {
             slidesPerView: 2,
             spaceBetween: 15,
           },
-          770: {
+          1000: {
             slidesPerView: 3,
             spaceBetween: 15,
           },
@@ -41,7 +41,7 @@ const Review = () => {
       >
         {Feedbackmock.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="mt-2 my-2 h-[210px] w-[350px] sm:w-[345px] lg:w-[380px] bg-[#7D3C13] text-[#A49FAF] rounded-xl mx-auto">
+            <div className="mt-2 my-2 h-[210px] w-[350px] sm:w-[370px] lg:w-[380px] bg-[#7D3C13] text-[#A49FAF] rounded-xl mx-auto">
               <h1 className="pt-2 px-3 text-[15px] font-sans">
                 {item.content}
               </h1>

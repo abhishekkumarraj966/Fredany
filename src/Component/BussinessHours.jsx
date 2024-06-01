@@ -8,7 +8,7 @@ const BussinessHours = () => {
         <h1 className="lg:my-4 my-4 sm:my-5 lg:font-bold text-[30px] font-bold  lg:text-[28px] sm:text-[30px] text-white text-center">
           Business Hours
         </h1>
-        <div className="border-2 sm:border-2 border-[#d6763b] rounded-[10px] bg-[#7D3C13]">
+        <div className="border-2 sm:border-2 border-[#d6763b] rounded-[10px] bg-[#7D3C13] sm:mx-20 px-4 sm:px-0">
           <div className=" mx-1 lg:ml-[45px] sm:mx-[25px] lg:my-[32px] sm:my-[25px] my-[15px] text-[#f1eeee]">
             <h3 className="lg:text-[20px] sm:text-[18px] font-[20px] lg:mt-10 sm:mt-6">
               MONDAY &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{" "}

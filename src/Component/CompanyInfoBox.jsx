@@ -1,19 +1,22 @@
 import React from "react";
 import p1 from "./assites/imge.jpg";
-import what from "./assites/WhatsApp.png";
-import fac from "./assites/Facebook Circled.png";
-import you from "./assites/YouTube.png";
-import inst from "./assites/Instagram.png";
-import amo from "./assites/amo.png";
-import big from "./assites/big.png";
-import im from "./assites/im-logo-512X512.png";
-import link from "./assites/Linkdin.png";
-import flip from "./assites/flip.png";
-import Xi from "./assites/Xa.png";
+import fl from "./assites/A.png";
+import what from "./assites/B.png";
+import fac from "./assites/c.png";
+import you from "./assites/D.png";
+import inst from "./assites/E.png";
+import amo from "./assites/F.png";
+import big from "./assites/G.png";
+import im from "./assites/H.png";
+import link from "./assites/i.png";
+import flip from "./assites/J.png";
+import Xi from "./assites/K.png";
+import Ax from "./assites/L.png";
+import Zo from "./assites/M.png";
 const CompanyInfoBox = () => {
   return (
     <div className="bg-[#7D3C13] " id="about">
-      <div className="w-[90vw] pt-[12px] sm:pt-[25px] lg:pt-[43px] mx-auto h-[302px] sm:h-[300px] lg:h-[520px] flex flex-col  items-center ">
+      <div className="w-[90vw] pt-[12px] sm:pt-[25px] lg:pt-[43px] mx-auto h-[100%] flex flex-col  items-center ">
         <img
           src={p1}
           className="w-[60px] h-[60px] rounded-[100%] sm:w-[120px] sm:h-[120px] lg:w-[184px]  lg:h-[184px] bg-[#00000046] mt-[-40px]"
@@ -30,76 +33,41 @@ const CompanyInfoBox = () => {
           layout. The point of using Lorem of distribution it look like readable
           English “
         </p>
-        <div className=" ml-2 mt-5 sm:hidden block  ">
-          <div className="flex gap-2 pb-2 mx-[5%]">
-            <img src={what} alt="facebook logo" className="h-[35px] w-[35px]" />
-            <img src={fac} alt="facebook logo" className="h-[35px] w-[35px]" />
-            <img src={you} alt="facebook logo" className="h-[35px] w-[35px]" />
-            <img
-              src={inst}
-              alt="facebook logo"
-              className="h-[35px] w-[35px]"
-            />
-            <img src={amo} alt="facebook logo" className="h-[35px] w-[35px]" />
-            <img src={big} alt="facebook logo" className="h-[35px] w-[35px]" />
-   
+        <div className=" ml-2 mt-5 md:hidden block pb-8 ">
+          <div className="flex gap-2 md:gap-4 pb-2 mx-[3%]">
+            <img src={what} alt="Lodinge.." className="h-[35px] w-[35px]" />
+            <img src={fac} alt="Lodinge.." className="h-[40px] w-[35px]" />
+            <img src={you} alt="Lodinge.." className="h-[35px] w-[35px]" />
+            <img src={inst} alt="Lodinge.." className="h-[35px] w-[35px]" />
+            <img src={amo} alt="Lodinge.." className="h-[35px] w-[35px]" />
+            <img src={big} alt="Lodinge.." className="h-[35px] w-[35px]" />
+            <img src={fl} alt="Lodinge.." className="h-[45px] w-[45px] " />
           </div>
-          <hr className="bg-black h-1 mx-[3%]" />
-          <div className="flex gap-2 pt-2 mx-[18%]">
-            <img src={im} alt="facebook logo" className="h-[40px] w-[38px] " />
-            <img src={Xi} alt="facebook logo" className="h-[40px] w-[38px]" />
-            <img
-              src={link}
-              alt="facebook logo"
-              className="h-[40px] w-[38px] "
-            />
-            <img
-              src={flip}
-              alt="facebook logo"
-              className="h-[40px] w-[38px] "
-            />
+          <hr className="bg-black h-[1px] mx-[3%]" />
+          <div className="flex gap-2 pt-2 mx-[3%]">
+            <img src={im} alt="Lodinge.." className="h-[40px] w-[40px] " />
+            <img src={Xi} alt="Lodinge.." className="h-[40px] w-[40px]" />
+            <img src={link} alt="Lodinge.." className="h-[40px] w-[40px] " />
+            <img src={flip} alt="Lodinge.." className="h-[40px] w-[40px] " />
+            <img src={Ax} alt="Lodinge.." className="h-[40px] w-[40px] " />
+            <img src={Zo} alt="Lodinge.." className="h-[40px] w-[40px] " />
           </div>
         </div>
-        <div className="items-center mt-[-5px] lg:mt-[15px]  mb-4 mx-[15%] hidden sm:block">
+        <div className="items-center mt-[-5px] lg:mt-[15px] pb-[20px]  mx-[15%] hidden md:block">
           <ul className="flex gap-[10px] lg:gap-[15px] px-4">
-            <img src={what} className="h-[50px] w-[50px] " alt="whataap" />
-            <img src={fac} alt="facbook" className="h-[50px] w-[50px]" />
-            <img src={inst} alt="instagram" className="h-[50px] w-[50px]" />
-            <img
-              src={you}
-              alt="youtube"
-              className="h-[50px] w-[50px] md:w-[60px]"
-            />
-            <img
-              src={flip}
-              alt="youtube"
-              className="h-[50px] w-[50px] md:w-[60px]"
-            />
-            <img
-              src={big}
-              alt="youtube"
-              className="h-[50px] w-[50px] md:w-[60px]"
-            />
-            <img
-              src={im}
-              alt="youtube"
-              className="h-[50px] w-[50px] md:w-[60px]"
-            />
-            <img
-              src={amo}
-              alt="youtube"
-              className="h-[50px] w-[50px] md:w-[60px]"
-            />
-            <img
-              src={Xi}
-              alt="youtube"
-              className="h-[50px] w-[50px] md:w-[60px]"
-            />
-            <img
-              src={link}
-              alt="youtube"
-              className="h-[50px] w-[50px] md:w-[60px]"
-            />
+            <img src={what} className="h-[50px] w-[50px] " alt="Lodinge.." />
+            <img src={fac} alt="Lodinge.." className="h-[50px] w-[50px]" />
+            <img src={inst} alt="Lodinge.." className="h-[50px] w-[50px]" />
+            <img src={you} alt="Lodinge.." className="h-[50px] w-[50px] " />
+            <img src={flip} alt="Lodinge.." className="h-[50px] w-[50px] " />
+            <img src={big} alt="Lodinge.." className="h-[50px] w-[50px] " />
+            <img src={im} alt="Lodinge.." className="h-[50px] w-[50px] " />
+            <img src={amo} alt="Lodinge.." className="h-[50px] w-[50px]" />
+            <img src={Xi} alt="Lodinge.." className="h-[50px] w-[50px] " />
+            <img src={link} alt="Lodinge.." className="h-[50px] w-[50px] " />
+            <img src={Ax} alt="Lodinge.." className="h-[50px] w-[50px] " />
+            <img src={Zo} alt="Lodinge.." className="h-[50px] w-[50px] " />
+            <img src={fl} alt="Lodinge.." className="h-[50px] w-[50px] " />
           </ul>
         </div>
       </div>
