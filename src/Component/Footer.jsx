@@ -2,18 +2,11 @@ import React from "react";
 import QR from "./assites/QR.jpeg";
 const Footer = () => {
   return (
-    <div className="w-full h-[880px]  sm:h-[350px] lg:h-[410px] bg-[#D4B294] flex flex-col ">
-      <div class="grid grid-cols-1 sm:grid-cols-3  gap-4">
-        <div className=" lg:mt-24 sm:mt-24 text-center mt-4">
-          <h1 className="font-bold text-6xl sm:text-4xl lg:text-6xl pt-5 md:pt-0 cursor-pointer">
-            <span className="text-8xl sm:text-6xl font-medium">F</span>
-            <span className="text-[#012429]">R</span>
-            <span className="text-[#19272b]">E</span>
-
-            <span className="text-[#43131D]">D</span>
-          </h1>
-        </div>
-        <div className="lg:mb-0 mt-10 lg:mt-10 mx-5 sm:mx-0">
+    <div className="w-full h-[700px]  sm:h-[350px] lg:h-[410px] bg-[#D4B294] flex flex-col ">
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2  gap-4">
+       
+        <div className="lg:mb-0 mt-10 lg:mt-10 mx-5 sm:mx-5 lg:ml-[25%]">
           <p className="mb-6 text-xl font-bold ">Contaact Details :-</p>
           <ul className="flex flex-col space-y-2   ">
             <h1 className=" font-bold text-xl">Address</h1>
@@ -31,7 +24,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className=" mb-2 sm:mb-8 lg:mb-0  lg:mt-10 mx-5 sm:mx-0 ">
+        <div className=" mb-2 sm:mb-8 lg:mb-0  lg:mt-10 mx-5 sm:mx-0 lg:ml-[10%]">
           <p className="mb-4 text-lg font-semibold  pt-12 ">Like & Follow</p>
           <ul className="flex flex-col space-y-4 text-[14px] font-medium ">
             <span className="flex flex-row gap-3 sm:gap-3 md:gap-3 lg:gap-3 xl:gap-3 mt-2">

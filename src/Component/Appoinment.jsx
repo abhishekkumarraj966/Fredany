@@ -1,21 +1,56 @@
-import React from 'react'
+import React from "react";
+import AppLayout from "./AppLayout";
 
 const Appoinment = () => {
   return (
-      <div className='bg-[#d6763b] pb-[20px] lg:pb-[60px]'>
-          <p className='text-center font-normal text-white text-[15px] sm:text-[30px] lg:text-[40px] pt-[35px] sm:pt-[42px] lg:pt-[60px]'>Appointment</p>
-          <div className='w-[90%] sm:w-[85%] lg:w-[80%]  h-[72px] sm:h-[100px] lg:h-[196px] items-center rounded-[10px] bg-[#D4B294] flex justify-around mx-auto mt-[30px]  sm:mt-[40px] lg:mt-[60px]'>
-             <div className=''>
-                <p className='font-bold text-[10px]  sm:text-[20px] lg:text-[32px] text-[#7D3C13] '>Pick a Date</p>
-                <input type='date' placeholder='Date' className='font-bold text-[13px]  sm:text-[18px] w-[162px] sm:w-[300px] lg:w-[601px] h-[30px]  sm:h-[40px] lg:h-[65px] bg-[#7D3C13] rounded-[5px] px-3 text-white'/>
-             </div>
-             <div className=''>
-                <p className='font-bold text-[10px] sm:text-[20px] lg:text-[32px] text-[#7D3C13] '>Select Hour</p>
-                <input type='time' placeholder='Date' className='font-bold text-[13px]  sm:text-[18px]  w-[92px] lg:w-[343px] sm:w-[300px] h-[30px] sm:h-[40px] lg:h-[65px] bg-[#7D3C13] rounded-[5px] px-3 text-white'/>
-             </div>
+    <div className="bg-[#D6763B]">
+      <AppLayout>
+        <p className="text-center font-bold text-[35px] text-[#FFF] pt-2 pb-6">
+          Appointment
+        </p>
+        <div className=" pb-10 rounded  bg-[#7D3C13] pt-6">
+          <div className="w-[90%] sm:w-[85%] lg:w-[80%]   sm:h-[100px]  items-center rounded-[10px]  lg:flex gap-2 justify-around mx-auto mt-[30px]  pb-20">
+            <div className="">
+              <p className="font-bold text-[10px]  sm:text-[20px]  text-[#fff] ">
+                Name
+              </p>
+              <input
+                type="text"
+                placeholder="name"
+                className="font-bold text-[13px]  sm:text-[18px] w-[100%]  h-[30px]  sm:h-[40px] lg:h-[40px] bg-[#fff] rounded-[5px] px-3 text-black"
+              />
+            </div>
+            <div className=" pt-4 lg:pt-0">
+              <p className="font-bold text-[10px] sm:text-[20px]  text-[#fff] ">
+                Contact No.
+              </p>
+              <input
+                type="Text"
+                placeholder="Mobile no."
+                className="font-bold text-[13px]  sm:text-[18px]  w-[100%]  h-[30px] sm:h-[40px] lg:h-[40px] bg-[#fff] rounded-[5px] px-3 text-black"
+              />
+            </div>
+            <div className=" pt-4 lg:pt-0">
+              <p className="font-bold text-[10px] sm:text-[20px]  text-[#fff] ">
+                Date
+              </p>
+              <input
+                type="date"
+                placeholder="Date"
+                className="font-bold text-[13px]  sm:text-[18px]  w-[100%]  h-[30px] sm:h-[40px] lg:h-[40px] bg-[#fff] rounded-[5px] px-3 text-black"
+              />
+            </div>
+            <button
+              type="submit"
+              className="bg-[#D4B294] sm:w-[30%]  text-white rounded-md py-2 px-3 mt-7 font-medium"
+            >
+              Submit
+            </button>
           </div>
-      </div>
-  )
-}
+        </div>
+      </AppLayout>
+    </div>
+  );
+};
 
-export default Appoinment
+export default Appoinment;

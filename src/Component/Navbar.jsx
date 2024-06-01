@@ -16,19 +16,20 @@ const Navbar = () => {
       <AppLayout>
         <ul className="text-center text-xl px-[20px] shadow-2xl  transition-transform duration-200 transform ">
           <li className="my-4 py-4 border-black ">
-            <a href="#home">Home</a>
+            <a href="#product">Product</a>
           </li>
           <li className="my-4 py-4 border-black">
-            <a href="#about">About Us</a>
+            <a href="#service">Services</a>
           </li>
           <li className="my-4 py-4 border-black">
-            <a href="#shop">Product</a>
+            <a href="#blogs">Blogs</a>
+          </li>
+        
+          <li className="my-4 py-4 border-black">
+            <a href="#gallery">Gallery</a>
           </li>
           <li className="my-4 py-4 border-black">
-            <a href="#contact">Contct Us</a>
-          </li>
-          <li className="my-4 py-4 border-black">
-            <a href="#gal">Gallery</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </AppLayout>
@@ -36,12 +37,12 @@ const Navbar = () => {
   );
 
   return (
-    <div className="bg-[#7D3C13]  text-white">
+    <div className="bg-[#7D3C13]  text-white sticky top-0 z-50">
       <AppLayout>
         <nav>
           <div className="h-16 flex justify-between z-20 text-white lg:py-5 px-[20px] py-4 ">
             <div className="flex items-center flex-1">
-              <a href="https://adsp-temp1-pro.vercel.app/">
+              <a href="/">
                 <span className="text-3xl font-bold">Fashionista</span>
                 {/* <img src="/" alt="comLogo" /> */}
               </a>
@@ -51,19 +52,19 @@ const Navbar = () => {
                 <ul className="flex gap-8 mr-16 text-[18px] ">
                   <li className="hover:text-black transition  hover:underline  cursor-pointer">
                    
-                      <a href="#home"> Home</a>
+                  <a href="#product">Product</a>
                   </li>
                   <li className="hover:text-black transition  hover:underline  cursor-pointer">
-                    <a href="#about">About Us</a>
+                  <a href="#service">Services</a>
                   </li>
                   <li className="hover:text-black transition  hover:underline  cursor-pointer">
-                    <a href="#shop">Product</a>
+                  <a href="#blogs">Blogs</a>
                   </li>
                   <li className="hover:text-black transition  hover:underline  cursor-pointer">
-                    <a href="#contact">Contct Us</a>
+                  <a href="#gallery">Gallery</a>
                   </li>
                   <li className="hover:text-black transition  hover:underline  cursor-pointer">
-                    <a href="#gal">Gallery</a>
+                  <a href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>

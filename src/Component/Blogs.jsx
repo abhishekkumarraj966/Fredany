@@ -9,9 +9,11 @@ const Blogs = () => {
     <div className="bg-[#d6763b] p-[37px]  mx-auto" id="blogs">
       <AppLayout>
         <div className="mx-auto">
-          <p className="font-bold text-[25px] text-center sm:text-[28px] lg:text-[32px] pt-[15px]  text-white ">
+
+          <h2 className="font-bold text-[30px] text-center sm:text-[28px] lg:text-[32px] pt-[8px] pb-[15px] text-white ">
             Blogs
-          </p>
+          </h2>
+
           <div className="grid sm:grid-cols-3 gap-1 mx-auto">
             <div className=" mt-4 sm:mt-1">
               <Link to="/blogespag">

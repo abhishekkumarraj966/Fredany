@@ -52,10 +52,10 @@ const ProductCard = () => {
    
       <div
         className=" w-full bg-[#7D3C13] pb-14"
-        id="shop"
+        id="product"
       >
          <AppLayout>
-        <h2 className="font-bold text-[15px] pb-10 text-center sm:text-[28px] lg:text-[32px] sm:pt-[40px] pt-[15px] lg:pt-[50px] text-white ">
+        <h2 className="font-bold text-[30px] pb-10 text-center sm:text-[28px] lg:text-[32px] sm:pt-[40px] pt-[15px] lg:pt-[50px] text-white ">
           Products
         </h2>
         <Swiper

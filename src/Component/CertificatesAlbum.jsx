@@ -1,14 +1,10 @@
 import { GrFormPrevious } from "react-icons/gr";
-import React from "react";
+import React, { useState } from "react";
 import { GrFormNext } from "react-icons/gr";
-
-let imagarr = [
-  "/assets/unsplash_SVb7lJc1tZ0.jpg",
-  "/assets/unsplash_7tOV35hnkao.jpg",
-  "/assets/unsplash_ea-Vg1hWjEI.jpg",
-  "/assets/unsplash_tuJtzghMuEw.jpg",
-  "/assets/unsplash_W5dsm9n6e3g.jpg",
-]; // if you want to add some image then , gice url in this array
+import gl1 from "./assites/gl1.jpg";
+import gl2 from "./assites/gl2.jpg";
+import gl3 from "./assites/gl3.jpg";
+let imagarr = [gl1, gl2, gl3]; // if you want to add some image then , gice url in this array
 
 const CertificatesAlbum = ({ setIsPopupOpen, imsg, setImage }) => {
   let handleNextImage = () => {
@@ -27,7 +23,7 @@ const CertificatesAlbum = ({ setIsPopupOpen, imsg, setImage }) => {
     }
   };
   return (
-    <div className="h-screen w-[350px] lg:w-[900px] sm:w-[700px] bg-[#1f1c147c] fixed top-0 flex justify-center z-10 items-center ml-[-11%] lg:mx-40 sm:mx-0">
+    <div className="h-screen w-full sm:mt-[3%] mt-[12%] bg-[#1f1c147c] fixed top-0 flex justify-center items-center z-10">
       <div
         className="text-right mt-2  text-white text-[31px] absolute right-5 top-3 cursor-pointer"
         onClick={() => setIsPopupOpen(false)}

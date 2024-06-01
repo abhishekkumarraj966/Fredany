@@ -11,6 +11,9 @@ const Review = () => {
   return (
     <div className="bg-[#D6763B] py-10">
     <AppLayout>
+    <h2 className="font-bold text-[30px]  text-center pb-6  text-white ">
+    Our Clintes Says
+          </h2>
     <div>
       {" "}
       <Swiper

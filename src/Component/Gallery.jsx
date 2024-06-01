@@ -11,9 +11,9 @@ const Gallery = () => {
     setImage(ImageNo);
   };
   return (
-    <div className="p-[50px] lg:p-[120px] bg-[#7D3C13]" id="gal">
+    <div className="p-[50px] lg:p-[120px] bg-[#7D3C13]" id="gallery">
       <AppLayout>
-      <p className="font-bold text-[15px] text-center sm:text-[28px] lg:text-[32px]   text-white ">
+      <p className="font-bold text-[30px] text-center sm:text-[28px] lg:text-[32px]   text-white ">
         Gallery
       </p>
 

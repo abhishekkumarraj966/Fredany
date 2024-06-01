@@ -10,10 +10,10 @@ const EnquiryForm = () => {
       }
 
     return (
-        <div className='bg-[#d6763b] pt-[15px] lg:pt-[40px]'>
-            <p className='font-bold text-[15px] text-center sm:text-[28px] lg:text-[32px]   text-white '>Enquiry Form</p>
+        <div className='bg-[#d6763b] pt-[15px] lg:pt-[40px] pb-8' id='contact'>
+            <p className='font-bold text-[30px] text-center   text-white '>Enquiry Form</p>
             <div className='w-[80%] h-auto  sm:h-auto lg:h-auto mx-auto mt-[50px]'>
-                <div className='bg-[#D4B294] h-[38px] sm:h-[60px] lg:h-[100px]  rounded-t-[16px] rounded-tr-[16px] font-bold text-[8px] sm:text-[16px] lg:text-[24px] flex items-center justify-center text-[#7D3C13]'>GET IN TOUCH</div>
+                <div className='bg-[#D4B294] h-[38px] sm:h-[60px] lg:h-[100px]  rounded-t-[16px] rounded-tr-[16px] font-bold text-[12px] sm:text-[16px] lg:text-[24px] flex items-center justify-center text-[#7D3C13]'>GET IN TOUCH</div>
                 <div className='h-auto sm:h-auto lg:h-auto bg-[#7D3C13] pb-6 sm:pb-8  lg:pb-10 rounded-b-[16px]'>
                     <div className='w-[80%] mx-auto'>
                         <input type='text' value={name} onChange={(e)=>setName(e.target.value)} placeholder='Type your Name :-' className='w-full pl-[30px] font-light text-[16px] sm:text-[18px] lg:text-[20px] text-white mx-auto h-[34px] outline-none  sm:h-[50px] lg:h-[81px] bg-gradient-to-tl from-[#7D3C13]   mt-[24px] lg:mt-[50px] to-[#be8a5c]' />
