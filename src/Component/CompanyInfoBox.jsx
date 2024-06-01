@@ -53,7 +53,7 @@ const CompanyInfoBox = () => {
             <img src={Zo} alt="Lodinge.." className="h-[40px] w-[40px] " />
           </div>
         </div>
-        <div className="items-center mt-[-5px] lg:mt-[15px] pb-[20px]  mx-[15%] hidden md:block">
+        <div className="items-center mt-[-5px] lg:mt-[15px] pb-[20px]  mx-[10%] hidden md:block">
           <ul className="flex gap-[10px] lg:gap-[15px] px-4">
             <img src={what} className="h-[50px] w-[50px] " alt="Lodinge.." />
             <img src={fac} alt="Lodinge.." className="h-[50px] w-[50px]" />
