@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 const EnquiryForm = () => {
       const [name,setName]=useState('');
       const [email,setEmail]=useState("");
+      const [cont,setcont]=useState("");
       const [msg,setMsg]=useState("");
       
       const handleSubmit=(e)=>{
@@ -20,6 +21,9 @@ const EnquiryForm = () => {
                     </div>
                     <div className='w-[80%] mx-auto'>
                         <input type='text' value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='Type your Email :-' className='w-full pl-[30px] font-light text-[16px] lg:text-[20px]  sm:text-[18px] mx-auto h-[34px] outline-none lg:h-[81px] sm:h-[50px] bg-gradient-to-tl from-[#7D3C13] text-white  mt-[24px] lg:mt-[50px] to-[#be8a5c]' />
+                    </div>
+                    <div className='w-[80%] mx-auto'>
+                        <input type='text' value={cont} onChange={(e)=>setcont(e.target.value)} placeholder='Type Mobile No. :-' className='w-full pl-[30px] font-light text-[16px] lg:text-[20px]  sm:text-[18px] mx-auto h-[34px] outline-none lg:h-[81px] sm:h-[50px] bg-gradient-to-tl from-[#7D3C13] text-white  mt-[24px] lg:mt-[50px] to-[#be8a5c]' />
                     </div>
                     <div className='w-[80%] mx-auto'>
                         <textarea onChange={(e)=>setMsg(e.target.value)} rows={4} placeholder='Any Message for Us :-' className='w-full pl-[30px] font-light text-[16px] lg:text-[20px]  mx-auto  sm:text-[18px] outline-none  bg-gradient-to-tl from-[#7D3C13] text-white  mt-[24px] lg:mt-[50px] to-[#be8a5c]'>{msg}</textarea>

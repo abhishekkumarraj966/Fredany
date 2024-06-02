@@ -11,13 +11,13 @@ const Gallery = () => {
     setImage(ImageNo);
   };
   return (
-    <div className="p-[50px] lg:p-[120px] bg-[#7D3C13]" id="gallery">
+    <div className="p-[50px] lg:p-[120px] bg-[#7D3C13] " id="gallery">
       <AppLayout>
       <p className="font-bold text-[30px] text-center sm:text-[28px] lg:text-[32px]   text-white ">
         Gallery
       </p>
 
-      <div className="mt-[30px] sm:mt-[50px] lg:mt-[100px]">
+      <div className="mt-[30px] sm:mt-[50px] lg:mt-[100px] md:ml-[10%] lg:ml-[5%]">
         <div className="flex space-x-[9px] sm:space-x-[20px] lg:space-x-[30px] ">
           <img
             src="/assets/unsplash_-aCDwxLAlzI (1).jpg"

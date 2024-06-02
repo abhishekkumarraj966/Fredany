@@ -13,9 +13,10 @@ import flip from "./assites/J.png";
 import Xi from "./assites/K.png";
 import Ax from "./assites/L.png";
 import Zo from "./assites/M.png";
+import Bo from "./assites/2.png";
 const CompanyInfoBox = () => {
   return (
-    <div className="bg-[#7D3C13] " id="about">
+    <div className="bg-[#7D3C13] pb-3 " id="about">
       <div className="w-[90vw] pt-[12px] sm:pt-[25px] lg:pt-[43px] mx-auto h-[100%] flex flex-col  items-center ">
         <img
           src={p1}
@@ -33,41 +34,204 @@ const CompanyInfoBox = () => {
           layout. The point of using Lorem of distribution it look like readable
           English “
         </p>
-        <div className=" ml-2 mt-5 md:hidden block pb-8 ">
+        <div className=" ml-2 mt-5 md:hidden block py-4 px-4 rounded-full bg-[#D4B294]">
           <div className="flex gap-2 md:gap-4 pb-2 mx-[3%]">
-            <img src={what} alt="Lodinge.." className="h-[35px] w-[35px]" />
-            <img src={fac} alt="Lodinge.." className="h-[40px] w-[35px]" />
-            <img src={you} alt="Lodinge.." className="h-[35px] w-[35px]" />
-            <img src={inst} alt="Lodinge.." className="h-[35px] w-[35px]" />
-            <img src={amo} alt="Lodinge.." className="h-[35px] w-[35px]" />
-            <img src={big} alt="Lodinge.." className="h-[35px] w-[35px]" />
-            <img src={fl} alt="Lodinge.." className="h-[45px] w-[45px] " />
+            <a href="">
+              <img src={what} alt="Lodinge.." className="h-[40px] w-[40px]" />
+            </a>
+            <a href="">
+              <img
+                src={im}
+                alt="Lodinge.."
+                className="h-[38px] w-[38px] cursor-pointer"
+              />
+            </a>
+            
+            <a href="">
+              <img
+                src={you}
+                alt="Lodinge.."
+                className="h-[35px] w-[35px] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={inst}
+                alt="Lodinge.."
+                className="h-[35px] w-[35px] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={amo}
+                alt="Lodinge.."
+                className="h-[35px] w-[35px] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={big}
+                alt="Lodinge.."
+                className="h-[35px] w-[35px] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={fl}
+                alt="Lodinge.."
+                className="h-[45px] w-[45px]  cursor-pointer"
+              />
+            </a>
           </div>
           <hr className="bg-black h-[1px] mx-[3%]" />
           <div className="flex gap-2 pt-2 mx-[3%]">
-            <img src={im} alt="Lodinge.." className="h-[40px] w-[40px] " />
-            <img src={Xi} alt="Lodinge.." className="h-[40px] w-[40px]" />
-            <img src={link} alt="Lodinge.." className="h-[40px] w-[40px] " />
-            <img src={flip} alt="Lodinge.." className="h-[40px] w-[40px] " />
-            <img src={Ax} alt="Lodinge.." className="h-[40px] w-[40px] " />
-            <img src={Zo} alt="Lodinge.." className="h-[40px] w-[40px] " />
+          <a href="">
+              <img src={fac} alt="Lodinge.." className="h-[40px] w-[35px]" />
+            </a>
+            <a href="">
+              <img
+                src={Xi}
+                alt="Lodinge.."
+                className="h-[40px] w-[40px] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={link}
+                alt="Lodinge.."
+                className="h-[40px] w-[40px] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={flip}
+                alt="Lodinge.."
+                className="h-[40px] w-[40px] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={Ax}
+                alt="Lodinge.."
+                className="h-[40px] w-[40px] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={Zo}
+                alt="Lodinge.."
+                className="h-[40px] w-[40px] cursor-pointer "
+              />
+            </a>
+            <a href="">
+              <img
+                src={Bo}
+                alt="Lodinge.."
+                className="h-[40px] w-[40px] cursor-pointer "
+              />
+            </a>
           </div>
         </div>
-        <div className="items-center mt-[-5px] lg:mt-[15px] pb-[20px]  mx-[10%] hidden md:block">
+        <div className="items-center mt-[-5px] lg:mt-[15px] pb-[20px]  mx-[10%] hidden md:block bg-[#D4B294] pt-4 px-8 rounded-full">
           <ul className="flex gap-[10px] lg:gap-[15px] px-4">
-            <img src={what} className="h-[50px] w-[50px] " alt="Lodinge.." />
-            <img src={fac} alt="Lodinge.." className="h-[50px] w-[50px]" />
-            <img src={inst} alt="Lodinge.." className="h-[50px] w-[50px]" />
-            <img src={you} alt="Lodinge.." className="h-[50px] w-[50px] " />
-            <img src={flip} alt="Lodinge.." className="h-[50px] w-[50px] " />
-            <img src={big} alt="Lodinge.." className="h-[50px] w-[50px] " />
-            <img src={im} alt="Lodinge.." className="h-[50px] w-[50px] " />
-            <img src={amo} alt="Lodinge.." className="h-[50px] w-[50px]" />
-            <img src={Xi} alt="Lodinge.." className="h-[50px] w-[50px] " />
-            <img src={link} alt="Lodinge.." className="h-[50px] w-[50px] " />
-            <img src={Ax} alt="Lodinge.." className="h-[50px] w-[50px] " />
-            <img src={Zo} alt="Lodinge.." className="h-[50px] w-[50px] " />
-            <img src={fl} alt="Lodinge.." className="h-[50px] w-[50px] " />
+            <a href="">
+              <img
+                src={what}
+                className="h-[50px] w-[50px]  cursor-pointer"
+                alt="Lodinge.."
+              />
+            </a>
+            <a href="">
+              <img
+                src={fac}
+                alt="Lodinge.."
+                className="h-[50px] w-[50px] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={inst}
+                alt="Lodinge.."
+                className="h-[50px] w-[50px] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={you}
+                alt="Lodinge.."
+                className="h-[50px] w-[50px] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={flip}
+                alt="Lodinge.."
+                className="h-[50px] w-[50px] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={big}
+                alt="Lodinge.."
+                className="h-[50px] w-[50px] cursor-pointer "
+              />
+            </a>
+            <a href="">
+              <img
+                src={im}
+                alt="Lodinge.."
+                className="h-[50px] w-[50px] cursor-pointer "
+              />
+            </a>
+            <a href="">
+              <img
+                src={amo}
+                alt="Lodinge.."
+                className="h-[50px] w-[50px] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={Xi}
+                alt="Lodinge.."
+                className="h-[50px] w-[50px]  cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={link}
+                alt="Lodinge.."
+                className="h-[50px] w-[50px] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={Ax}
+                alt="Lodinge.."
+                className="h-[50px] w-[50px]  cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={Zo}
+                alt="Lodinge.."
+                className="h-[50px] w-[50px] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={fl}
+                alt="Lodinge.."
+                className="h-[50px] w-[50px] cursor-pointer"
+              />
+            </a>
+            <a href="">
+              <img
+                src={Bo}
+                alt="Lodinge.."
+                className="h-[50px] w-[50px] cursor-pointer"
+              />
+            </a>
           </ul>
         </div>
       </div>
