@@ -27,7 +27,7 @@ const PopupAlbum = ({ setIsPopupOpen, imsg, setImage }) => {
     }
   };
   return (
-    <div className="h-screen w-[355px] lg:w-[1100px] sm:mt-[5%] mt-[12%] sm:w-[100%] bg-[#1f1c147c] fixed top-0 flex justify-center items-center z-10 ml-[-14%] sm:ml-2 md:ml-[-7%]  sm:mx-auto  ">
+    <div className="h-screen w-[100%] lg:w-[1100px] sm:mt-[5%] mt-[12%] sm:w-[100%] bg-[#1f1c147c] fixed top-0 flex justify-center items-center z-10 ml-[-14%] sm:ml-[-5%] md:ml-[-7%] lg:ml-[0%]  sm:mx-auto  ">
       <div
         className="text-right mt-2  text-white text-[31px] absolute right-5 top-3 cursor-pointer"
         onClick={() => setIsPopupOpen(false)}
@@ -44,7 +44,7 @@ const PopupAlbum = ({ setIsPopupOpen, imsg, setImage }) => {
         </div>
         <img
           src={imagarr[imsg]}
-          className="w-[90%] transition-transform transform duration-100 hover:scale-110 h-[380px] mx-auto md:h-[400px]  lg:h-[400px]  lg:rounded-[1px]"
+          className="w-[90%] transition-transform transform duration-100 hover:scale-110 h-[95%] mx-auto md:h-[400px]  lg:h-[400px]  lg:rounded-[1px]"
           alt="Image 1"
         />
         <div
