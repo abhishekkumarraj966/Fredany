@@ -16,26 +16,25 @@ const Navbar = () => {
       <AppLayout>
         <ul className="text-center text-xl px-[20px] shadow-2xl  transition-transform duration-200 transform ">
           <li className="my-4 py-4 border-black ">
-            <a href="#product">Product</a>
+            <a href="#product"onClick={handleClick}>Product</a>
           </li>
           <li className="my-4 py-4 border-black">
-            <a href="#service">Services</a>
+            <a href="#service" onClick={handleClick}>Services</a>
           </li>
           <li className="my-4 py-4 border-black">
-            <a href="#blogs">Blogs</a>
+            <a href="#blogs" onClick={handleClick}>Blogs</a>
           </li>
-        
+
           <li className="my-4 py-4 border-black">
-            <a href="#gallery">Gallery</a>
+            <a href="#gallery"onClick={handleClick}>Gallery</a>
           </li>
           <li className="my-4 py-4 border-black">
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={handleClick}>Contact</a>
           </li>
         </ul>
       </AppLayout>
     </div>
   );
-
   return (
     <div className="bg-[#7D3C13]  text-white sticky top-0 z-50">
       <AppLayout>
@@ -51,20 +50,19 @@ const Navbar = () => {
               <div className="flex-10">
                 <ul className="flex gap-8 mr-16 text-[18px] ">
                   <li className="hover:text-black transition  hover:underline  cursor-pointer">
-                   
-                  <a href="#product">Product</a>
+                    <a href="#product">Product</a>
                   </li>
                   <li className="hover:text-black transition  hover:underline  cursor-pointer">
-                  <a href="#service">Services</a>
+                    <a href="#service">Services</a>
                   </li>
                   <li className="hover:text-black transition  hover:underline  cursor-pointer">
-                  <a href="#blogs">Blogs</a>
+                    <a href="#blogs">Blogs</a>
                   </li>
                   <li className="hover:text-black transition  hover:underline  cursor-pointer">
-                  <a href="#gallery">Gallery</a>
+                    <a href="#gallery">Gallery</a>
                   </li>
                   <li className="hover:text-black transition  hover:underline  cursor-pointer">
-                  <a href="#contact">Contact</a>
+                    <a href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
