@@ -1,8 +1,8 @@
-import Footer  from "./Component/Footer"
+import Footer from "./Component/Footer";
 import "./App.css";
 import Layout from "./Component/Layout";
 import Navbar from "./Component/Navbar";
-import Probuctpage from "./Component/Probuctpage"
+import Probuctpage from "./Component/Probuctpage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Blogespag from "./Component/Blogespag";
 function App() {
@@ -12,10 +12,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Layout />} />
-          <Route path="/blogespag" element={<Blogespag />} />
-        <Route path="/productpage" element={<Probuctpage/>} />
+          <Route path="/blogespag/:id" element={<Blogespag />} />
+          <Route path="/productpage/:id" element={<Probuctpage />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </div>
   );

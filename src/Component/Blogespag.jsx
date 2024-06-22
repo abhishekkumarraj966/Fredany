@@ -2,27 +2,34 @@ import React from "react";
 import AppLayout from "./AppLayout";
 import man from "./assites/img3.png";
 import { IoArrowBackCircleSharp } from "react-icons/io5";
-import { Link } from "react-router-dom";
-const Blogespag = () => {
+import { useParams, Link } from "react-router-dom";
+import BlogPage from "./MockData/BlogeMock"
+
+  const Blogespag = () => {
+  const { id } = useParams();
+  const product = BlogPage.find((p) => p.id === parseInt(id));
+
+  if (!product) {
+    return <div>Blogpage not found</div>;
+  }
   return (
     <div id="">
       <AppLayout>
         <div className="mx-auto sm:mx-14  bg-white py-[20px]">
-        <Link to="/">
-          <button class="bg-[#BA9E88] hover:bg-[#D2C3B9] text-white text-[24px] font-bold py-2 px-4 rounded flex gap-2 ml-4 mb-3">
-           
-            <IoArrowBackCircleSharp className="h-10" /> Back
-          </button>
+          <Link to="/">
+            <button class="bg-[#000] hover:bg-[#010101] text-white text-[24px] font-bold py-2 px-4 rounded flex gap-2 ml-4 mb-3">
+              <IoArrowBackCircleSharp className="h-10" /> Back
+            </button>
           </Link>
           <div className="sm:pt-[60px] pt-8   mx-8 sm:mx-auto  bg-[#DFDFDF] rounded-xl">
             <img
-              src={man}
+              src={BlogPage.imgSrc}
               alt=""
               className="w-[120px] sm:w-[300px] sm:h-[300px] h-[120px] rounded-full border-4  border-[#F6931E]  mx-auto"
             />
           </div>
           <div className="sm:mt-10 mt-6 mx-10">
-            <h2 className="text-[#FC7044] font-bold pb-12 text-start ml-2 text-[20px]">
+            <h2 className="text-[#000] font-bold pb-12 text-start ml-2 text-[20px]">
               Best Physician Doctor In Indore
             </h2>
             <p className="font-normal text-[17px] sm:mx-10  tracking-[1px]  text-start  pb-10">
@@ -72,7 +79,6 @@ const Blogespag = () => {
         </div>
       </AppLayout>
     </div>
-    
   );
 };
 

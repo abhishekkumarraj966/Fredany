@@ -1,8 +1,15 @@
 import React from 'react'
 import AppLayout from "./AppLayout"
-import { Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import img2 from "./assites/productimg.jpg"
+import products from "./MockData/Product"
 const Probuctpage = () => {
+   const { id } = useParams();
+  const product = products.find((p) => p.id === parseInt(id));
+
+  if (!product) {
+    return <div>Product not found</div>;
+  }
   return (
     <div className="">
       <AppLayout>
@@ -15,24 +22,24 @@ const Probuctpage = () => {
           <div className="  flex  mx-2 sm:mx-auto">
             <div className="flex-col gap-4">
               <img
-                src={img2}
+                src={product.img}
                 alt=""
                 className="h-[100px] sm:h-[200px] w-full  border-2 sm:border-4  border-[#BA9E88]"
               />
               <img
-                src={img2}
+                src={product.img}
                 alt=""
                 className="h-[100px] sm:h-[200px] w-full border-2 sm:border-4 border-[#BA9E88]"
               />
               <img
-                src={img2}
+                src={product.img}
                 alt=""
                 className="h-[100px] sm:h-[200px] w-full border-2 sm:border-4  border-[#BA9E88]"
               />
             </div>
             <div className="">
               <img
-                src={img2}
+                src={product.img}
                 alt=""
                 className=" h-[300px] sm:h-[600px] w-full border-2 sm:border-4  border-[#BA9E88]"
               />
